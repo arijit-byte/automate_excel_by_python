@@ -1,0 +1,28 @@
+#xl1 = 
+#yl1 = 
+#xl2 = 
+#yl2 = 
+
+#xr1 = 
+#yr1 = 
+#xr2 = 
+#yr2 = 
+
+TL = 1.38  #(yl2 – yl1)/(xl2 – xl1) #0.93 #1.38
+TR = 0.838  #(yr2 – yr1)/(xr2 – xr1) #1.38
+DL = 1.75
+DR = 1.75
+YC = 1.2
+
+eq_1 = TL*DL
+eq_2 = TR*DR
+eq_3 = eq_1-eq_2
+eq_4 = TL+TR
+eq_5 = DL*DR
+
+final_eq_1 = YC*eq_3
+final_eq_2 = eq_4*eq_5
+
+final_eq = final_eq_1/final_eq_2 
+np.arcsin(final_eq)
+
